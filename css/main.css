@@ -78,6 +78,11 @@ body {
         font-family: ff-netto-web, sans-serif;
         background-color: white;
         margin-bottom: 20px; }
+        body #main #sidebar h1 a {
+          color: #c2c2bc;
+          text-decoration: none; }
+        body #main #sidebar h1 a:hover {
+          text-decoration: underline; }
       body #main #sidebar ul {
         list-style: none;
         font-family: ff-netto-web, sans-serif;
@@ -93,16 +98,23 @@ body {
             font-size: 24px;
             line-height: 24px;
             text-transform: lowercase; }
+          body #main #sidebar ul li p {
+            clear: both; }
+          body #main #sidebar ul li abbr {
+            float: right;
+            margin-bottom: 4px;
+            border: 0 none;
+            cursor: auto; }
       body #main #sidebar ul.specials li p {
         font-size: 18px;
         color: #5a5a57; }
-      body #main #sidebar ul.specials li.today {
+      body #main #sidebar ul.specials li:first-child {
         border: none;
         padding-top: 0; }
-        body #main #sidebar ul.specials li.today h2 {
+        body #main #sidebar ul.specials li:first-child h2 {
           color: #690707;
           font-size: 32px; }
-        body #main #sidebar ul.specials li.today p {
+        body #main #sidebar ul.specials li:first-child p {
           font-size: 24px; }
     body #main #content {
       display: inline;

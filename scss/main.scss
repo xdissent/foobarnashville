@@ -112,6 +112,15 @@ body {
                 font-family: ff-netto-web, sans-serif;
                 background-color: white;
                 margin-bottom: 20px;
+                
+                a {
+                    color: #c2c2bc;
+                    text-decoration: none;
+                }
+                
+                a:hover {
+                    text-decoration: underline;
+                }
             }
             
             ul {
@@ -132,6 +141,17 @@ body {
                         line-height: 24px;
                         text-transform: lowercase;
                     }
+
+                    p {
+                        clear: both;
+                    }
+
+                    abbr {
+                        float: right;
+                        margin-bottom: 4px;
+                        border: 0 none;
+                        cursor: auto;
+                    }
                 }
 
             }
@@ -145,7 +165,7 @@ body {
                     }
                 }
                 
-                li.today {
+                li:first-child {
                     border: none;
                     padding-top: 0;
                     

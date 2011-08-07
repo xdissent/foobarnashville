@@ -8,38 +8,26 @@
         'Friday' => 'DJ\'s choice',
         'Saturday' => '$4 Jameson'
     );
+
+    $today = new DateTime;
+    if ($today->format('G') < 3) {
+        $today->modify('-1 day');
+    }
+    $today = $today->format('w');
+    $specials = array_merge(
+        array_slice($specials, $today, 7 - $today),
+        array_slice($specials, 0, $today)
+    );
 ?>       
         <section id="sidebar">
             <h1>Daily Drink Specials</h1>
             <ul class="specials">
-                <li class="today">
-                    <h2>Friday</h2>
-                    <p>DJ's choice</p>
-                </li>
+            <?php foreach($specials as $day => $sp): ?>
                 <li>
-                    <h2>Saturday</h2>
-                    <p>$4 Jameson</p>
+                    <h2><?php echo $day; ?></h2>
+                    <p><?php echo $sp; ?></p>
                 </li>
-                <li>
-                    <h2>Sunday</h2>
-                    <p>PBR and a Jim Beam for $6</p>
-                </li>
-                <li>
-                    <h2>Monday</h2>
-                    <p>$4 Margaritas</p>
-                </li>
-                <li>
-                    <h2>Tuesday</h2>
-                    <p>Any draft with a shot of Sauza tequila $5</p>
-                </li>
-                <li>
-                    <h2>Wednesday</h2>
-                    <p>Any draft and a shot of Bushmills $6</p>
-                </li>
-                <li>
-                    <h2>Thursday</h2>
-                    <p>All drafts $3 Jameson $4</p>
-                </li>
+            <?php endforeach; ?>
             </ul>
             
             <?php dynamic_sidebar('side'); ?>
