@@ -60,6 +60,7 @@ class FOO_Widget_Twitter extends WP_Widget
         $tweets = getTweets('foobarnashville', 3);
 
         $title = apply_filters('widget_title', empty($instance['title']) ? __('Twitter Feed') : $instance['title']);
+        $title = '<a href="http://twitter.com/foobarnashville/" title="' . $title . '">' . $title . '</a>';
         echo $before_widget;
         if ($title) {
             echo $before_title . $title . $after_title;
