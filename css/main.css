@@ -134,11 +134,18 @@ body {
           margin-bottom: 28px; }
       body #main #content #calendar {
         margin-bottom: 28px; }
-        body #main #content #calendar .fc-event,
-        body #main #content #calendar .fc-agenda .fc-event-time,
-        body #main #content #calendar .fc-event a {
+        body #main #content #calendar .fc-event-skin {
           background-color: #650000;
           border-color: #650000; }
+        body #main #content #calendar .fc-state-highlight {
+          background-color: #82827F; }
+        body #main #content #calendar h2 {
+          font-family: mashine, sans-serif;
+          color: #690707;
+          font-size: 32px; }
+        body #main #content #calendar .fc-day-number {
+          font-family: mashine, sans-serif;
+          color: white; }
       body #main #content .gallery .gallery-item {
         margin-bottom: 28px; }
       body #main #content .gallery img {

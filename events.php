@@ -19,7 +19,8 @@ Template Name: Events
             'title' => $ev->getProperty('summary'),
             'start' => $ev->getStart(),
             'end'   => $ev->getEnd()-1,
-            'allDay' => $ev->isWholeDay()
+            'allDay' => $ev->isWholeDay(),
+            'url' => $ev->getProperty('url')
         );
 
         if (isset($ev->recurrence)) {
@@ -48,19 +49,19 @@ Template Name: Events
     $events = 'events:' . json_encode($data) . ',';
 
     wp_enqueue_script(
-        'jquery-1.4.3',
-        'http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'
+        'jquery-1.5.2',
+        'http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js'
     );
 
     wp_enqueue_script(
         'fullcalendar',
-        get_bloginfo('template_url') . '/SG-iCalendar/demo/fullcalendar.js',
-        array('jquery-1.4.3')
+        get_bloginfo('template_url') . '/js/fullcalendar.min.js',
+        array('jquery-1.5.2')
     );
 
     wp_enqueue_style(
         'fullcalendar',
-        get_bloginfo('template_url') . '/SG-iCalendar/demo/fullcalendar.css'
+        get_bloginfo('template_url') . '/css/fullcalendar.css'
     );
     
     $current = 'events';
@@ -85,16 +86,13 @@ Template Name: Events
                             right: 'month,agendaWeek,agendaDay'
                         },
 
-                        year: 2011,
-                        month: 8-1,
+                        titleFormat: {
+                            month: 'MMMM yyyy',
+                            week: "MMM d[ yyyy]{ '&#8212;'[ MMM] d yyyy}",
+                            day: 'ddd, MMM d, yyyy'
+                        },
 
                         <?php echo $events ?>
-
-                        eventClick: function(event) {
-                            // opens events in a popup window
-                            window.open(event.url, 'gcalevent', 'width=700,height=600');
-                            return false;
-                        },
 
                         loading: function(bool) {
                             if (bool) {

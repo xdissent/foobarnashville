@@ -203,11 +203,24 @@ body {
             #calendar {
                 margin-bottom: 28px;
 
-                .fc-event,
-                .fc-agenda .fc-event-time,
-                .fc-event a {
+                .fc-event-skin {
                     background-color: #650000;
                     border-color: #650000;
+                }
+
+                .fc-state-highlight {
+                    background-color: #82827F;
+                }
+
+                h2 {
+                    font-family: mashine, sans-serif;
+                    color: #690707;
+                    font-size: 32px;
+                }
+
+                .fc-day-number {
+                    font-family: mashine, sans-serif;
+                    color: white;
                 }
             }
 
