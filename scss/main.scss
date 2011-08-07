@@ -90,12 +90,17 @@ body {
         width: 940px;
         padding: 0 20px 0;
         margin: 0 auto;
+        clear: both;
     
         #sidebar {
-            clear: both;
+            display: inline;
             float: left;
             width: 220px;
             margin: 30px 20px 20px 0;
+
+            a {
+                color: white;
+            }
             
             h1 {
                 padding: 0 6px;
@@ -127,14 +132,20 @@ body {
                         line-height: 24px;
                         text-transform: lowercase;
                     }
-                    
+                }
+
+            }
+
+            ul.specials {
+
+                li {
                     p {
                         font-size: 18px;
                         color: #5a5a57;
                     }
                 }
                 
-                li:first-child {
+                li.today {
                     border: none;
                     padding-top: 0;
                     
@@ -149,6 +160,67 @@ body {
                 }
             }
         }
+
+        #content {
+            display: inline;
+            float: left;
+            width: 700px;
+            font-family: ff-netto-web, sans-serif;
+
+            img  {
+                display: block;
+                border-radius: 5px;
+                box-shadow: 0 0 10px #82827f;
+                margin-bottom: 28px;
+            }
+
+            p {
+                margin-bottom: 28px;
+                font-size: 24px;
+            }
+
+            div.left {
+                width: 340px;
+                float: left;
+                color: #5a5a57;
+            }
+
+            div.right {
+                width: 340px;
+                float: right;
+                color: #8c3b3b;
+
+                h2 {
+                    width: 202px;
+                    height: 44px;
+                    text-indent: -999px;
+                    overflow: hidden;
+                    background: transparent url(../img/footoo.png) left top no-repeat;
+                    margin-bottom: 28px;
+                }
+            }
+
+            #calendar {
+                margin-bottom: 28px;
+
+                .fc-event,
+                .fc-agenda .fc-event-time,
+                .fc-event a {
+                    background-color: #650000;
+                    border-color: #650000;
+                }
+            }
+
+            .gallery {
+                .gallery-item {
+                    margin-bottom: 28px;
+                }
+
+                img {
+                    display: inline;
+                }
+            }
+        }
     }
     
     > footer {
@@ -157,6 +229,13 @@ body {
         height: 400px;
         padding-top: 38px;
         background: transparent url(../img/footer-bg.png) center center repeat;
+
+        p {
+            width: 700px;
+            margin: 0 auto;
+            font-family: ff-netto-web, sans-serif;
+            color: #ccc;
+        }
         
         nav {
             width: 700px;

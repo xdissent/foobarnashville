@@ -68,7 +68,7 @@ Template Name: Events
 ?>
 
     <div id="main">
-        <?php // get_sidebar('side'); ?>
+        <?php get_sidebar('side'); ?>
         
         <section id="content">
             <div id="calendar"></div>
@@ -78,11 +78,11 @@ Template Name: Events
 
                     $('#calendar').fullCalendar({
                         header: {
-                            // left: 'prev,next today',
-                            left: '',
+                            left: 'prev,next today',
+                            // left: '',
                             center: 'title',
-                            right: 'prev,next today',
-                            // right: 'month,agendaWeek,agendaDay'
+                            // right: 'prev,next today',
+                            right: 'month,agendaWeek,agendaDay'
                         },
 
                         year: 2011,

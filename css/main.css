@@ -59,9 +59,10 @@ body {
   body #main {
     width: 940px;
     padding: 0 20px 0;
-    margin: 0 auto; }
+    margin: 0 auto;
+    clear: both; }
     body #main #sidebar {
-      clear: both;
+      display: inline;
       float: left;
       width: 220px;
       margin: 30px 20px 20px 0; }
@@ -104,15 +105,16 @@ body {
         body #main #sidebar ul.specials li.today p {
           font-size: 24px; }
     body #main #content {
-      padding: 140px 0 0 0;
-      /* 220px; */ }
+      display: inline;
+      float: left;
+      width: 700px;
+      font-family: ff-netto-web, sans-serif; }
       body #main #content img {
         display: block;
         border-radius: 5px;
         box-shadow: 0 0 10px #82827f;
         margin-bottom: 28px; }
       body #main #content p {
-        font-family: ff-netto-web, sans-serif;
         margin-bottom: 28px;
         font-size: 24px; }
       body #main #content div.left {
@@ -127,18 +129,31 @@ body {
           width: 202px;
           height: 44px;
           text-indent: -999px;
+          overflow: hidden;
           background: transparent url(../img/footoo.png) left top no-repeat;
           margin-bottom: 28px; }
       body #main #content #calendar {
         margin-bottom: 28px; }
-        body #main #content #calendar .fc-content {
-          clear: none; }
+        body #main #content #calendar .fc-event,
+        body #main #content #calendar .fc-agenda .fc-event-time,
+        body #main #content #calendar .fc-event a {
+          background-color: #650000;
+          border-color: #650000; }
+      body #main #content .gallery .gallery-item {
+        margin-bottom: 28px; }
+      body #main #content .gallery img {
+        display: inline; }
   body > footer {
     clear: both;
     width: 100%;
     height: 400px;
     padding-top: 38px;
     background: transparent url(../img/footer-bg.png) center center repeat; }
+    body > footer p {
+      width: 700px;
+      margin: 0 auto;
+      font-family: ff-netto-web, sans-serif;
+      color: #ccc; }
     body > footer nav {
       width: 700px;
       height: 45px;
