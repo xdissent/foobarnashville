@@ -1,0 +1,3 @@
+[submodule "SG-iCalendar"]
+	path = SG-iCalendar
+	url = https://github.com/fangel/SG-iCalendar.git
