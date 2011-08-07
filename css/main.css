@@ -1,0 +1,179 @@
+body {
+  background: #c4c4be url(../img/bg.png) center center repeat; }
+  body > header {
+    width: 980px;
+    margin: 0 auto;
+    padding: 0; }
+    body > header h1 {
+      width: 240px;
+      height: 149px;
+      margin-right: 20px;
+      float: left;
+      background: transparent url(../img/logo.png) left top no-repeat;
+      overflow: hidden;
+      text-indent: -999px; }
+    body > header nav {
+      width: 700px;
+      float: left;
+      margin-top: 48px;
+      padding-bottom: 25px;
+      border-bottom: 4px solid white;
+      position: relative; }
+      body > header nav > h1 {
+        display: none; }
+      body > header nav ul {
+        margin-left: 10px; }
+        body > header nav ul li {
+          display: inline;
+          margin: 0 10px 0 0;
+          color: #5a5a57;
+          font-size: 32px;
+          font-family: ff-netto-web, sans-serif;
+          text-transform: uppercase; }
+          body > header nav ul li a {
+            color: #5a5a57;
+            text-decoration: none; }
+        body > header nav ul li.current {
+          border-top: 4px solid #690707; }
+          body > header nav ul li.current a {
+            color: white; }
+      body > header nav ul.elsewhere {
+        position: absolute;
+        top: 4px;
+        right: 0; }
+        body > header nav ul.elsewhere li {
+          display: block;
+          float: left;
+          margin: 0 4px 0 10px; }
+          body > header nav ul.elsewhere li a {
+            display: block;
+            overflow: hidden;
+            text-indent: -999px;
+            background: transparent url(../img/fb.png) left top no-repeat;
+            width: 27px;
+            height: 27px; }
+          body > header nav ul.elsewhere li a[href*="twitter"] {
+            background-image: url(../img/twitter.png); }
+          body > header nav ul.elsewhere li a[href*="foursquare"] {
+            background-image: url(../img/fs.png); }
+  body #main {
+    width: 940px;
+    padding: 0 20px 0;
+    margin: 0 auto; }
+    body #main #sidebar {
+      clear: both;
+      float: left;
+      width: 220px;
+      margin: 30px 20px 20px 0; }
+      body #main #sidebar a {
+        color: white; }
+      body #main #sidebar h1 {
+        padding: 0 6px;
+        font-weight: normal;
+        color: #c2c2bc;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: lowercase;
+        font-family: ff-netto-web, sans-serif;
+        background-color: white;
+        margin-bottom: 20px; }
+      body #main #sidebar ul {
+        list-style: none;
+        font-family: ff-netto-web, sans-serif;
+        color: #5a5a57;
+        margin-bottom: 40px; }
+        body #main #sidebar ul li {
+          border-top: 1px solid #d3d3cf;
+          margin-bottom: 16px;
+          padding-top: 10px; }
+          body #main #sidebar ul li h2 {
+            font-family: mashine, sans-serif;
+            color: #82827f;
+            font-size: 24px;
+            line-height: 24px;
+            text-transform: lowercase; }
+      body #main #sidebar ul.specials li p {
+        font-size: 18px;
+        color: #5a5a57; }
+      body #main #sidebar ul.specials li.today {
+        border: none;
+        padding-top: 0; }
+        body #main #sidebar ul.specials li.today h2 {
+          color: #690707;
+          font-size: 32px; }
+        body #main #sidebar ul.specials li.today p {
+          font-size: 24px; }
+    body #main #content {
+      padding: 140px 0 0 0;
+      /* 220px; */ }
+      body #main #content img {
+        display: block;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #82827f;
+        margin-bottom: 28px; }
+      body #main #content p {
+        font-family: ff-netto-web, sans-serif;
+        margin-bottom: 28px;
+        font-size: 24px; }
+      body #main #content div.left {
+        width: 340px;
+        float: left;
+        color: #5a5a57; }
+      body #main #content div.right {
+        width: 340px;
+        float: right;
+        color: #8c3b3b; }
+        body #main #content div.right h2 {
+          width: 202px;
+          height: 44px;
+          text-indent: -999px;
+          background: transparent url(../img/footoo.png) left top no-repeat;
+          margin-bottom: 28px; }
+      body #main #content #calendar {
+        margin-bottom: 28px; }
+        body #main #content #calendar .fc-content {
+          clear: none; }
+  body > footer {
+    clear: both;
+    width: 100%;
+    height: 400px;
+    padding-top: 38px;
+    background: transparent url(../img/footer-bg.png) center center repeat; }
+    body > footer nav {
+      width: 700px;
+      height: 45px;
+      margin: 0 auto;
+      padding-left: 240px;
+      position: relative;
+      background: transparent url(../img/footer-logo.png) 20px top no-repeat; }
+      body > footer nav > h1 {
+        display: none; }
+      body > footer nav ul li {
+        display: inline;
+        margin: 0 10px 0 0;
+        color: #9d9d9c;
+        font-size: 32px;
+        font-family: ff-netto-web, sans-serif;
+        text-transform: uppercase; }
+        body > footer nav ul li a {
+          color: #9d9d9c;
+          text-decoration: none; }
+      body > footer nav ul.elsewhere {
+        position: absolute;
+        top: 4px;
+        right: 0px; }
+        body > footer nav ul.elsewhere li {
+          display: block;
+          float: left;
+          margin: 0 4px 0 10px; }
+          body > footer nav ul.elsewhere li a {
+            display: block;
+            overflow: hidden;
+            text-indent: -999px;
+            background: transparent url(../img/footer-fb.png) left top no-repeat;
+            width: 27px;
+            height: 27px; }
+          body > footer nav ul.elsewhere li a[href*="twitter"] {
+            background-image: url(../img/footer-twitter.png); }
+          body > footer nav ul.elsewhere li a[href*="foursquare"] {
+            background-image: url(../img/fs.png); }

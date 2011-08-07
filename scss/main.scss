@@ -1,0 +1,219 @@
+body {
+
+    background: #c4c4be url(../img/bg.png) center center repeat;
+    
+    > header {
+        width: 980px;
+        margin: 0 auto;
+        padding: 0;
+        
+        h1 {
+            width: 240px;
+            height: 149px;
+            margin-right: 20px;
+            float: left;
+            background: transparent url(../img/logo.png) left top no-repeat;
+            overflow: hidden;
+            text-indent: -999px;
+        }
+        
+        nav {
+            width: 700px;
+            float: left;
+            margin-top: 48px;
+            padding-bottom: 25px;
+            border-bottom: 4px solid white;
+            position: relative;
+            
+            > h1 {
+                display: none;
+            }
+            
+            ul {
+                margin-left: 10px;
+            
+                li {
+                    display: inline;
+                    margin: 0 10px 0 0;
+                    color: #5a5a57;
+                    font-size: 32px;
+                    font-family: ff-netto-web, sans-serif;
+                    text-transform: uppercase;
+                    
+                    a {
+                        color: #5a5a57;
+                        text-decoration: none;
+                    }
+                }
+                
+                li.current {
+                    border-top: 4px solid #690707;
+                    
+                    a {
+                        color: white;
+                    }
+                }
+            }
+            
+            ul.elsewhere {
+                position: absolute;
+                top: 4px;
+                right: 0;
+                
+                li {
+                    display: block;
+                    float: left;
+                    margin: 0 4px 0 10px;
+                    
+                    a {
+                        display: block;
+                        overflow: hidden;
+                        text-indent: -999px;
+                        background: transparent url(../img/fb.png) left top no-repeat;
+                        width: 27px;
+                        height: 27px;
+                    }
+                    
+                    a[href*="twitter"] {
+                        background-image: url(../img/twitter.png);
+                    }
+                    
+                    a[href*="foursquare"] {
+                        background-image: url(../img/fs.png);
+                    }
+                }
+            }
+        }
+    }
+    
+    #main {
+        width: 940px;
+        padding: 0 20px 0;
+        margin: 0 auto;
+    
+        #sidebar {
+            clear: both;
+            float: left;
+            width: 220px;
+            margin: 30px 20px 20px 0;
+            
+            h1 {
+                padding: 0 6px;
+                font-weight: normal;
+                color: #c2c2bc;
+                font-size: 24px;
+                line-height: 32px;
+                text-transform: lowercase;
+                font-family: ff-netto-web, sans-serif;
+                background-color: white;
+                margin-bottom: 20px;
+            }
+            
+            ul {
+                list-style: none;
+                font-family: ff-netto-web, sans-serif;
+                color: #5a5a57;
+                margin-bottom: 40px;
+                
+                li {
+                    border-top: 1px solid #d3d3cf;
+                    margin-bottom: 16px;
+                    padding-top: 10px;
+                                
+                    h2 {
+                        font-family: mashine, sans-serif;
+                        color: #82827f;
+                        font-size: 24px;
+                        line-height: 24px;
+                        text-transform: lowercase;
+                    }
+                    
+                    p {
+                        font-size: 18px;
+                        color: #5a5a57;
+                    }
+                }
+                
+                li:first-child {
+                    border: none;
+                    padding-top: 0;
+                    
+                    h2 {
+                        color: #690707;
+                        font-size: 32px;
+                    }
+                    
+                    p {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+    
+    > footer {
+        clear: both;
+        width: 100%;
+        height: 400px;
+        padding-top: 38px;
+        background: transparent url(../img/footer-bg.png) center center repeat;
+        
+        nav {
+            width: 700px;
+            height: 45px;
+            margin: 0 auto;
+            padding-left: 240px;
+            position: relative;
+            background: transparent url(../img/footer-logo.png) 20px top no-repeat;
+            
+            > h1 {
+                display: none;
+            }
+            
+            ul {
+                li {
+                    display: inline;
+                    margin: 0 10px 0 0;
+                    color: #9d9d9c;
+                    font-size: 32px;
+                    font-family: ff-netto-web, sans-serif;
+                    text-transform: uppercase;
+                    
+                    a {
+                        color: #9d9d9c;
+                        text-decoration: none;
+                    }
+                }
+            }
+            
+            ul.elsewhere {
+                position: absolute;
+                top: 4px;
+                right: 0px;
+                
+                li {
+                    display: block;
+                    float: left;
+                    margin: 0 4px 0 10px;
+                    
+                    a {
+                        display: block;
+                        overflow: hidden;
+                        text-indent: -999px;
+                        background: transparent url(../img/footer-fb.png) left top no-repeat;
+                        width: 27px;
+                        height: 27px;
+                    }
+                    
+                    a[href*="twitter"] {
+                        background-image: url(../img/footer-twitter.png);
+                    }
+                    
+                    a[href*="foursquare"] {
+                        background-image: url(../img/fs.png);
+                    }
+                }
+            }
+        }
+    }
+}
