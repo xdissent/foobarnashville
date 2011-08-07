@@ -11,9 +11,14 @@
             <div class="left">
 
                 <p>fooBAR - Nashville's best place to get a drink. Well at least we like to think so. And more than a few people agree with us.</p>
-                <a href="http://maps.google.com/maps?q=foobar+nashville&hl=en&ll=36.195594,-86.74324&spn=0.007654,0.011115&sll=36.195579,-86.743247&sspn=0.015308,0.02223&gl=us&z=17">
-                    <img class="map" src="http://maps.googleapis.com/maps/api/staticmap?center=2511+Gallatin+Ave,+Nashville,+TN&zoom=16&size=340x250&sensor=false&markers=color:red%7Clabel:A%7C36.196859,-86.742768" />
+
+                <h2>Find Us</h2>
+                <a href="http://maps.google.com/maps?q=foobar+nashville&hl=en&ll=36.195594,-86.74324&spn=0.007654,0.011115&sll=36.195579,-86.743247&sspn=0.015308,0.02223&gl=us&z=17" title="fooBAR. on Google Maps">
+                    <img class="map" src="http://maps.googleapis.com/maps/api/staticmap?center=2511+Gallatin+Ave,+Nashville,+TN&zoom=16&size=340x250&sensor=false&markers=color:red%7Clabel:A%7C36.196859,-86.742768" alt="fooBAR. on Google Maps" />
                 </a>
+
+                <h2>Check In</h2>
+                <a href="http://foursquare.com" title="fooBAR. on Foursquare">Get special offers and deals</a>
             </div>
 
             <div class="right">

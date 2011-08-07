@@ -132,7 +132,36 @@ body {
       body #main #content div.left {
         width: 340px;
         float: left;
-        color: #5a5a57; }
+        color: #5a5a57;
+        position: relative; }
+        body #main #content div.left h2 {
+          display: inline;
+          color: #4c4c4c;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 28px;
+          background-color: rgba(255, 255, 255, 0.7);
+          position: relative;
+          top: 32px;
+          z-index: 2;
+          padding: 10px;
+          box-shadow: 0 0 10px #82827f;
+          text-transform: uppercase; }
+        body #main #content div.left h2 + a img {
+          margin-top: -28px; }
+        body #main #content div.left a[href*="foursquare"] {
+          display: block;
+          margin: -28px 0 28px;
+          padding: 85px 0 20px;
+          background: rgba(255, 255, 255, 0.5) url(../img/fs-big.png) 150px 28px no-repeat;
+          border-radius: 5px;
+          box-shadow: 0 0 10px #82827f;
+          font-size: 24px;
+          line-height: 28px;
+          text-align: center;
+          text-decoration: none;
+          text-transform: lowercase;
+          color: #4c4c4c; }
       body #main #content div.right {
         width: 340px;
         float: right;
