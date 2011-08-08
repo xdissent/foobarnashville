@@ -18,7 +18,7 @@
                 </a>
 
                 <h2>Check In</h2>
-                <a href="http://foursquare.com" title="fooBAR. on Foursquare">Get special offers and deals</a>
+                <a href="http://foursquare.com/venue/334163" title="fooBAR on Foursquare" rel="external">Get special offers and deals</a>
             </div>
 
             <div class="right">
