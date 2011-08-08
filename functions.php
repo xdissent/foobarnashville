@@ -101,6 +101,6 @@ function _register()
         )
     );
     
-    remove_filter('the_content', 'wpautop');
+    //remove_filter('the_content', 'wpautop');
 }
 add_action('init', '_register');
