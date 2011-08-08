@@ -364,3 +364,17 @@ body {
         }
     }
 }
+
+html.no-rgba {
+    #content {
+        div.left {
+            h2 {
+                background-color: #ffffff;
+            }
+            
+            a[href*="foursquare"] {
+                background: #ffffff url(../img/fs-big.png) 150px 28px no-repeat;
+            }
+        }
+    }
+}

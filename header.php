@@ -5,13 +5,11 @@
 
     <script type="text/javascript" src="http://use.typekit.com/uef7aid.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    
-    <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
+
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/html5reset-1.6.1.css" />
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
+    
+    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modernizr.js"></script>
 
     <?php wp_head(); ?>
 </head>

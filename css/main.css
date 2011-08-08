@@ -240,3 +240,8 @@ body {
             background-image: url(../img/footer-twitter.png); }
           body > footer nav ul.elsewhere li a[href*="foursquare"] {
             background-image: url(../img/fs.png); }
+
+html.no-rgba #content div.left h2 {
+  background-color: #ffffff; }
+html.no-rgba #content div.left a[href*="foursquare"] {
+  background: white url(../img/fs-big.png) 150px 28px no-repeat; }
