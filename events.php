@@ -14,6 +14,11 @@ Template Name: Events
 
     $data = array();
     foreach ($evts as $id => $ev) {
+
+        if ($ev->getProperty('organizer') !== 'Foobar') {
+            continue;
+        }
+
         $jsEvt = array(
             'id' => ($id+1),
             'title' => $ev->getProperty('summary'),
